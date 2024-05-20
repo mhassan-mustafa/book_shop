@@ -1,0 +1,15 @@
+<!-- templates/book_create.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create Book</title>
+</head>
+<body>
+    <h1>Create a New Book</h1>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Save</button>
+    </form>
+</body>
+</html>
